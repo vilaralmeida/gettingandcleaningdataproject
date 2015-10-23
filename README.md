@@ -6,7 +6,7 @@
 - Appropriately labels the data set with descriptive variable names. 
 - From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
-To solve the question, I follow the following steps, as described in run_analysis function:
+To solve the question, I've followed this steps, as described in run_analysis function:
 - I've assumed that the Samsung data is in your working directory
 - Build three test files (subject_test, X_test and Y_test)
 - Build three train files (subject_train, X_train and Y_train)
