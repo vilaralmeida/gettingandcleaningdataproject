@@ -1,0 +1,100 @@
+# run_analysis' output Code Book
+
+The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
+
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
+
+These signals were used to estimate variables of the feature vector for each pattern:  
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+
+The set of variables that were estimated from these signals are: 
+
+mean(): Mean value
+std(): Standard deviation
+
+
+variables selected on the final data frame:
+
+"subject" 
+"activities" activity labels
+"averagetbodyacc-std()-x" 
+"averagetbodyacc-std()-y" 
+"averagetbodyacc-std()-z" 
+"averagetgravityacc-std()-x" 
+"averagetgravityacc-std()-y" 
+"averagetgravityacc-std()-z" 
+"averagetbodyaccjerk-std()-x" 
+"averagetbodyaccjerk-std()-y" 
+"averagetbodyaccjerk-std()-z" 
+"averagetbodygyro-std()-x" 
+"averagetbodygyro-std()-y" 
+"averagetbodygyro-std()-z" 
+"averagetbodygyrojerk-std()-x" 
+"averagetbodygyrojerk-std()-y" 
+"averagetbodygyrojerk-std()-z" 
+"averagetbodyaccmag-std()" 
+"averagetgravityaccmag-std()" 
+"averagetbodyaccjerkmag-std()" 
+"averagetbodygyromag-std()" 
+"averagetbodygyrojerkmag-std()" 
+"averagefbodyacc-std()-x" 
+"averagefbodyacc-std()-y" 
+"averagefbodyacc-std()-z" 
+"averagefbodyaccjerk-std()-x" 
+"averagefbodyaccjerk-std()-y" 
+"averagefbodyaccjerk-std()-z" 
+"averagefbodygyro-std()-x" 
+"averagefbodygyro-std()-y" 
+"averagefbodygyro-std()-z" 
+"averagefbodyaccmag-std()" 
+"averagefbodybodyaccjerkmag-std()" 
+"averagefbodybodygyromag-std()" 
+"averagefbodybodygyrojerkmag-std()" 
+"averagetbodyacc-mean()-x" 
+"averagetbodyacc-mean()-y" 
+"averagetbodyacc-mean()-z" 
+"averagetgravityacc-mean()-x" 
+"averagetgravityacc-mean()-y" 
+"averagetgravityacc-mean()-z" 
+"averagetbodyaccjerk-mean()-x" 
+"averagetbodyaccjerk-mean()-y" 
+"averagetbodyaccjerk-mean()-z" 
+"averagetbodygyro-mean()-x" 
+"averagetbodygyro-mean()-y" 
+"averagetbodygyro-mean()-z" 
+"averagetbodygyrojerk-mean()-x" 
+"averagetbodygyrojerk-mean()-y" 
+"averagetbodygyrojerk-mean()-z" 
+"averagetbodyaccmag-mean()" 
+"averagetgravityaccmag-mean()" 
+"averagetbodyaccjerkmag-mean()" 
+"averagetbodygyromag-mean()" 
+"averagetbodygyrojerkmag-mean()" 
+"averagefbodyacc-mean()-x" 
+"averagefbodyacc-mean()-y" 
+"averagefbodyacc-mean()-z" 
+"averagefbodyacc-meanfreq()-x" 
+"averagefbodyacc-meanfreq()-y" 
+"averagefbodyacc-meanfreq()-z" 
+"averagefbodyaccjerk-mean()-x" 
+"averagefbodyaccjerk-mean()-y" 
+"averagefbodyaccjerk-mean()-z" 
+"averagefbodyaccjerk-meanfreq()-x" 
+"averagefbodyaccjerk-meanfreq()-y" 
+"averagefbodyaccjerk-meanfreq()-z" 
+"averagefbodygyro-mean()-x" 
+"averagefbodygyro-mean()-y" 
+"averagefbodygyro-mean()-z" 
+"averagefbodygyro-meanfreq()-x"
+"averagefbodygyro-meanfreq()-y" 
+"averagefbodygyro-meanfreq()-z" 
+"averagefbodyaccmag-mean()" 
+"averagefbodyaccmag-meanfreq()" 
+"averagefbodybodyaccjerkmag-mean()" 
+"averagefbodybodyaccjerkmag-meanfreq()" 
+"averagefbodybodygyromag-mean()" 
+"averagefbodybodygyromag-meanfreq()" 
+"averagefbodybodygyrojerkmag-mean()" 
+"averagefbodybodygyrojerkmag-meanfreq()"
